@@ -4,9 +4,8 @@
   "version": "0.1.0",
   "identifier": "com.example.test-app",
   "build": {
-    "frontendDist": "../static/",
     "devUrl": "http://localhost:8000",
-    "beforeDevCommand": "python -m http.server -d static/"
+    "beforeDevCommand": "air"
   },
   "app": {
     "windows": [

@@ -1,0 +1,5 @@
+package templates
+
+templ SendBtn(target string) {
+	<button hx-get={ "/" + target } hx-swap="outerHTML" class="px-6 py-2 bg-blue-500 hover:bg-blue-800 active:bg-blue-950">{ target }</button>
+}
