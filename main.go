@@ -12,18 +12,14 @@ func main() {
 
 	app.Use(logger.New())
 
-	home := tmpl.Home()
-	ping := tmpl.SendBtn("ping")
-	pong := tmpl.SendBtn("pong")
-
 	app.Get("/", func(c *fiber.Ctx) error {
-		return Render(c, home)
+		return Render(c, tmpl.Home())
 	})
 	app.Get("/ping", func(c *fiber.Ctx) error {
-		return Render(c, pong)
+		return Render(c, tmpl.Ping())
 	})
 	app.Get("/pong", func(c *fiber.Ctx) error {
-		return Render(c, ping)
+		return Render(c, tmpl.Pong())
 	})
 
 	app.Static("/", "./static")

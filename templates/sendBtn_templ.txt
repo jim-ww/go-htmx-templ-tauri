@@ -1,3 +1,2 @@
-<button hx-get=\"
-\" hx-swap=\"outerHTML\" class=\"px-6 py-2 bg-blue-500 hover:bg-blue-800 active:bg-blue-950\">
-</button>
+<button hx-get=\"/pong\" hx-swap=\"outerHTML\" class=\"px-6 py-2 bg-blue-500 hover:bg-blue-800 active:bg-blue-950\">ping</button>
+<button hx-get=\"/ping\" hx-swap=\"outerHTML\" class=\"px-6 py-2 bg-red-500 hover:bg-red-800 active:bg-red-950\">pong</button>
